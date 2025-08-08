@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Sajida Khan for web development and coding tutoring opportunities.">
+    <title>Contact - Sajida Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="nav-glass fixed top-0 w-full z-50 no-print">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold glitch neon-text" data-text="SAJIDA.KHAN">SAJIDA.KHAN</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link magnetic">Home</a>
+                    <a href="about.html" class="nav-link magnetic">About</a>
+                    <a href="skills.html" class="nav-link magnetic">Skills</a>
+                    <a href="projects.html" class="nav-link magnetic">Projects</a>
+                    <a href="experience.html" class="nav-link magnetic">Experience</a>
+                    <a href="contact.html" class="nav-link magnetic active">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="sr-only">Open menu</span>
+                        <div class="burger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Section -->
+    <section id="contact" class="page min-h-screen py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4 neon-text">Let's Connect</h2>
+                <p class="text-xl text-gray-400">Ready to collaborate on coding or tutoring projects?</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16">
+                <div class="glass rounded-3xl p-8">
+                    <h3 class="text-3xl font-bold mb-8 text-cyan-400">Send a Message</h3>
+                    <form class="space-y-6" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="name" required>
+                            <label class="form-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" id="email" required>
+                            <label class="form-label">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="subject" required>
+                            <label class="form-label">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" rows="5" id="message" required></textarea>
+                            <label class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="neo-btn w-full magnetic">
+                            <i class="fas fa-paper-plane mr-2"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-8">
+                    <div class="glass rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-pink-400">Get In Touch</h3>
+                        <div class="space-y-4">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope text-cyan-400 mr-4"></i>
+                                <span>sajida.khan@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone text-pink-400 mr-4"></i>
+                                <span>+91 (XXX) XXX-XXXX</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt text-purple-400 mr-4"></i>
+                                <span>Delhi, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-purple-400">Follow Me</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="https://github.com/yourusername" class="social-card magnetic" aria-label="GitHub">
+                                <i class="fab fa-github text-2xl"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://linkedin.com/in/yourusername" class="social-card magnetic" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin text-2xl"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://x.com/yourusername" class="social-card magnetic" aria-label="X">
+                                <i class="fab fa-twitter text-2xl"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://youtube.com/yourusername" class="social-card magnetic" aria-label="YouTube">
+                                <i class="fab fa-youtube text-2xl"></i>
+                                <span>YouTube</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="glass rounded-3xl p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-green-400">Availability</h3>
+                        <div class="availability-status">
+                            <div class="status-indicator"></div>
+                            <span>Available for new projects</span>
+                        </div>
+                        <p class="text-gray-400 mt-4">Currently seeking web development and tutoring opportunities in Delhi NCR or remotely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gray-800">
+        <p class="text-gray-400">© 2025 Sajida Khan. Crafted with passion and code.</p>
+    </footer>
+</body>
+</html>
