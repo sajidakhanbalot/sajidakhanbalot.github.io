@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Sajida Khan - Beginner Python Developer & Coding Tutor with 3+ years of experience in teaching and tech support.">
+    <title>About - Sajida Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="nav-glass fixed top-0 w-full z-50 no-print">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="logo">
+                    <h1 class="text-2xl font-bold glitch neon-text" data-text="SAJIDA.KHAN">SAJIDA.KHAN</h1>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link magnetic">Home</a>
+                    <a href="about.html" class="nav-link magnetic active">About</a>
+                    <a href="skills.html" class="nav-link magnetic">Skills</a>
+                    <a href="projects.html" class="nav-link magnetic">Projects</a>
+                    <a href="experience.html" class="nav-link magnetic">Experience</a>
+                    <a href="contact.html" class="nav-link magnetic">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                        <span class="sr-only">Open menu</span>
+                        <div class="burger-lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="page min-h-screen py-20 relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-5xl md:text-6xl font-black mb-4 neon-text">About Me</h2>
+                <p class="text-xl text-gray-400">Passionate coder and dedicated educator</p>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <div class="glass rounded-3xl p-8">
+                        <h3 class="text-3xl font-bold mb-6 text-cyan-400">My Journey</h3>
+                        <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                            I’m Sajida Khan, a beginner Python developer with 3 years of experience in teaching, counseling, and tech support. My journey began as a coding tutor, where I trained students in Python and web development, fostering a passion for creating user-friendly applications. As a counselor, I honed my communication skills, and as a tech support professional, I developed problem-solving abilities. Now, I’m eager to transition into web development and front-end roles, bringing my technical and interpersonal skills to innovative projects.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-cyan-400 to-pink-400 flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Educator</h4>
+                                    <p class="text-gray-400">Trained 100+ students in Python and web development</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-pink-400 to-purple-400 flex items-center justify-center">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Developer</h4>
+                                    <p class="text-gray-400">Built projects like chatbots and games</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-cyan-400 flex items-center justify-center">
+                                    <i class="fas fa-headset"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">Tech Support</h4>
+                                    <p class="text-gray-400">1 year resolving technical issues</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="glass rounded-3xl p-6 text-center">
+                        <div class="text-4xl font-black text-cyan-400 mb-2">3+</div>
+                        <div class="text-gray-400">Years Experience</div>
+                    </div>
+                    <div class="glass rounded-3xl p-6 text-center">
+                        <div class="text-4xl font-black text-pink-400 mb-2">100+</div>
+                        <div class="text-gray-400">Students Taught</div>
+                    </div>
+                    <div class="glass rounded-3xl p-6 text-center">
+                        <div class="text-4xl font-black text-purple-400 mb-2">5+</div>
+                        <div class="text-gray-400">Projects</div>
+                    </div>
+                    <div class="glass rounded-3xl p-6 text-center">
+                        <div class="text-4xl font-black text-yellow-400 mb-2">4</div>
+                        <div class="text-gray-400">Technologies</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center border-t border-gray-800">
+        <p class="text-gray-400">© 2025 Sajida Khan. Crafted with passion and code.</p>
+    </footer>
+</body>
+</html>
